@@ -1,0 +1,61 @@
+/*    Create a Class and a main() method
+    Create a WebDriver instance, named driver, with the FirefoxDriver().
+    Open the browser with https://training-support.net/selenium/tables using get() method.
+    Use findElements() in combination with xpath() to find the number of columns and rows (not counting the table header) and print them.
+    Find and print the cell value at the second row and second column.
+    Click the header of the first column to sort by name.
+    Find and print the cell value at the second row and second column again.
+    Print the cell values of the table footer.
+    Close the browser.*/
+
+
+package selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Activity8_2 {
+
+	public static void main(String[] args) {
+		
+		//Open browser
+		WebDriver driver = new FirefoxDriver();
+        driver.get("https://training-support.net/selenium/tables");
+        
+        //Get columns
+        List<WebElement> cols = driver.findElements(By.xpath("//table[@id='sortableTable']/thead/tr/th"));
+        
+        //Get rows
+        List<WebElement> rows = driver.findElements(By.xpath("//table[@id='sortableTable']/tbody/tr"));	
+	
+        //Number of columns	
+        System.out.println("Number of columns are: " + cols.size());
+	
+        //Number of rows	
+        System.out.println("Number of rows are: " + rows.size());
+		
+        //Cell value of second row, second column before sorting by Name
+        WebElement cellValueBefore  = driver.findElement(By.xpath("//table[@id='sortableTable']/tbody/tr[2]/td[2]"));
+        System.out.println("Second row, second column value: " + cellValueBefore.getText());
+        
+        //sort by Name
+        driver.findElement(By.xpath("//table[@id='sortableTable']/thead/tr/th[1]")).click();
+        
+        ////Cell value of second row, second column after sorting by Name
+        WebElement cellValueAfter = driver.findElement(By.xpath("//table[@id='sortableTable']/tbody/tr[2]/td[2]"));
+        System.out.println("Second row, second column value: " + cellValueAfter.getText());
+        
+      //Print footer cell values
+        WebElement footer = driver.findElement(By.xpath("//table[@id='sortableTable']/tfoot/tr"));
+        System.out.println("Table footer values:" + footer.getText());
+        
+	
+        //Close browser
+        driver.close();
+	}
+
+}
