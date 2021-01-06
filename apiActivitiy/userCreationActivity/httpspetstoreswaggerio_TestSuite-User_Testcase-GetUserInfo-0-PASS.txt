@@ -1,0 +1,43 @@
+Status: PASS
+Time Taken: 465
+Size: 130
+Timestamp: Wed Jan 06 15:49:43 IST 2021
+TestStep: GetUserInfo
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://petstore.swagger.io
+Encoding: UTF-8
+Method: GET
+StatusCode: 200
+URL: https://petstore.swagger.io/v2/user/nithvish
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [petstore.swagger.io]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET https://petstore.swagger.io/v2/user/nithvish HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Length: 0
+Host: petstore.swagger.io
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Server: [Jetty(9.2.9.v20150224)]
+Access-Control-Allow-Origin: [*]
+Access-Control-Allow-Methods: [GET, POST, DELETE, PUT]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 06 Jan 2021 10:19:43 GMT]
+Access-Control-Allow-Headers: [Content-Type, api_key, Authorization]
+Content-Type: [application/json]
+
+{"id":9013685127327341976,"username":"nithvish","email":"abc@gmail.com","password":"password","phone":"6780123450","userStatus":0}
