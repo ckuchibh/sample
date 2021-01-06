@@ -1,0 +1,16 @@
+Status: PASS
+Time Taken: 19
+Size: 0
+Timestamp: Wed Jan 06 15:28:59 IST 2021
+TestStep: PropertyTransfer 2
+
+----------------- Messages ------------------------------
+Performed transfer [id]
+----------------------------------------------------
+id transferred [[0015g000004LTyPAAW]] from [SoapBinding create-create Request.Response] to [SoapBinding delete-delete Request.Request]
+------------ source path -------------
+declare namespace ns1='urn:enterprise.soap.sforce.com';
+//ns1:createResponse[1]/ns1:result[1]/ns1:id[1]
+------------ target path -------------
+declare namespace urn='urn:enterprise.soap.sforce.com';
+//urn:delete[1]/urn:ids[1]
