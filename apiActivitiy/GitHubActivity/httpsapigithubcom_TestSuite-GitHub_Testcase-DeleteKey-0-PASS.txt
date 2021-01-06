@@ -1,0 +1,56 @@
+Status: PASS
+Time Taken: 1335
+Size: 0
+Timestamp: Wed Dec 30 15:46:26 IST 2020
+TestStep: DeleteKey
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: DELETE
+StatusCode: 204
+URL: https://api.github.com/user/keys/48988087
+
+---------------- Request ---------------------------
+Authorization: [Bearer 7b2b087eaff81f43d3277404c6e7bb1f70ebde95]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+Content-Type: [application/json]
+
+DELETE https://api.github.com/user/keys/48988087 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 7b2b087eaff81f43d3277404c6e7bb1f70ebde95
+Content-Length: 0
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+Status: [204 No Content]
+X-Accepted-OAuth-Scopes: [admin:public_key]
+Server: [GitHub.com]
+X-RateLimit-Used: [7]
+Access-Control-Allow-Origin: [*]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1609326576]
+Date: [Wed, 30 Dec 2020 10:16:27 GMT]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4993]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+Vary: [Accept-Encoding, Accept, X-Requested-With, Accept-Encoding]
+X-RateLimit-Limit: [5000]
+#status#: [HTTP/1.1 204 No Content]
+X-XSS-Protection: [1; mode=block]
+X-OAuth-Scopes: [admin:public_key, user:email]
+X-GitHub-Request-Id: [C86A:4E9F:159C18E:1B58988:5FEC537A]
