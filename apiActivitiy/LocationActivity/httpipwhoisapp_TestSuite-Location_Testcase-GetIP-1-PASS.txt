@@ -1,0 +1,43 @@
+Status: PASS
+Time Taken: 247
+Size: 759
+Timestamp: Thu Dec 31 11:36:34 IST 2020
+TestStep: GetIP
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://ipwhois.app
+Method: GET
+StatusCode: 200
+URL: http://ipwhois.app/json/200.18.179.245
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [ipwhois.app]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET http://ipwhois.app/json/200.18.179.245 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Length: 0
+Host: ipwhois.app
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+X-Robots-Tag: [noindex]
+Server: [nginx/1.14.0]
+Access-Control-Allow-Origin: [*]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 200 OK]
+Date: [Thu, 31 Dec 2020 06:06:33 GMT]
+Access-Control-Allow-Headers: [*]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [PHP/7.4.6]
+
+{"ip":"200.18.179.245","success":true,"type":"IPv4","continent":"South America","continent_code":"SA","country":"Brazil","country_code":"BR","country_flag":"https:\/\/cdn.ipwhois.io\/flags\/br.svg","country_capital":"Brasilia","country_phone":"+55","country_neighbours":"SR,PE,BO,UY,GY,PY,GF,VE,CO,AR","region":"State of Rio de Janeiro","city":"Rio de Janeiro","latitude":"-22.9068467","longitude":"-43.1728965","asn":"","org":null,"isp":null,"timezone":"America\/Sao_Paulo","timezone_name":"Brasilia Summer Time","timezone_dstOffset":"3600","timezone_gmtOffset":"-10800","timezone_gmt":"GMT -3:00","currency":"Brazilian Real","currency_code":"BRL","currency_symbol":"$","currency_rates":"5.193975","currency_plural":"Brazilian reals","completed_requests":43}
