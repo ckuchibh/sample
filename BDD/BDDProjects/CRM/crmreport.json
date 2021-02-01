@@ -1,0 +1,581 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login into the CRM Site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9096987300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to Alchemy CRM site and login",
+            "match": {
+              "location": "stepDefinition.CRMActivity1.Login_to_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T11:09:50.433Z",
+        "line": 9,
+        "name": "Counting Dashlets",
+        "description": "",
+        "id": "crm-site;counting-dashlets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28978700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Print count of dashlets",
+            "match": {
+              "location": "stepDefinition.CRMActivity1.print_count_dashlets()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 961765700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Close the Browser",
+            "match": {
+              "location": "stepDefinition.CloseBrowser.close_Browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@Activity1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the CRM Site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7989971500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to Alchemy CRM site and login",
+            "match": {
+              "location": "stepDefinition.CRMActivity1.Login_to_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T11:10:00.630Z",
+        "line": 14,
+        "name": "Create leads using parameterization",
+        "description": "",
+        "id": "crm-site;create-leads-using-parameterization",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2811939700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Navigate to Sales Leads and CreateLead",
+            "match": {
+              "location": "stepDefinition.CRMActivity2.navigate_to_sales_leads_create_lead()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11257508900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Fill the details \"Mrs. \", First Name \"Mounika\", Last Name \"Yerragundla\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mrs. ",
+                  "offset": 18
+                },
+                {
+                  "val": "Mounika",
+                  "offset": 38
+                },
+                {
+                  "val": "Yerragundla",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinition.CRMActivity2.fill_the_details(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11685155000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Navigate to View Leads page to see results \"Mrs. \", First Name \"Mounika\", Last Name \"Yerragundla\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mrs. ",
+                  "offset": 44
+                },
+                {
+                  "val": "Mounika",
+                  "offset": 64
+                },
+                {
+                  "val": "Yerragundla",
+                  "offset": 85
+                }
+              ],
+              "location": "stepDefinition.CRMActivity2.navigate_to_view_leads_page_to_see_results(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 957796500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Close the Browser",
+            "match": {
+              "location": "stepDefinition.CloseBrowser.close_Browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@Activity2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the CRM Site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8310797300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to Alchemy CRM site and login",
+            "match": {
+              "location": "stepDefinition.CRMActivity1.Login_to_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T11:10:35.352Z",
+        "line": 21,
+        "name": "Schedule a meeting and invite members",
+        "description": "",
+        "id": "crm-site;schedule-a-meeting-and-invite-members",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3654163700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Navigate to Activities Meetings ScheduleaMeeting",
+            "match": {
+              "location": "stepDefinition.CRMActivity3.navigate_to_activities_meetings_schedulea_meeting()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79006400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter the details of the meeting",
+            "match": {
+              "location": "stepDefinition.CRMActivity3.enter_the_details_of_the_meeting()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8990475600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Search for members and add them to the meeting",
+            "match": {
+              "location": "stepDefinition.CRMActivity3.search_for_members_and_add_them_to_the_meeting(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "fname",
+                  "lname",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "Zelma",
+                  "Newby",
+                  "phone27@example.tw"
+                ]
+              },
+              {
+                "cells": [
+                  "Sarah",
+                  "Smith",
+                  "sarah@example.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1817135400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Navigate to View Meetings page and confirm creation of the meeting",
+            "match": {
+              "location": "stepDefinition.CRMActivity3.gotoviewmeetingspageandconfirmcreation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1063590700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Close the Browser",
+            "match": {
+              "location": "stepDefinition.CloseBrowser.close_Browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@Activity3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the CRM Site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8125321100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to Alchemy CRM site and login",
+            "match": {
+              "location": "stepDefinition.CRMActivity1.Login_to_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T11:10:59.281Z",
+        "line": 42,
+        "name": "Creating a Product",
+        "description": "",
+        "id": "crm-site;creating-a-product;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3046155400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Navigate to All Products CreateProduct",
+            "match": {
+              "location": "stepDefinition.CRMActivity4.navigate_to_all_products_create_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65445100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Enter Details of the Product \"laptop\", \"60000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "laptop",
+                  "offset": 30
+                },
+                {
+                  "val": "60000",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinition.CRMActivity4.enter_details_of_the_product(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1183354200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Click Save",
+            "match": {
+              "location": "stepDefinition.CRMActivity4.click_save()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1608571100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Navigated to View Products Page",
+            "match": {
+              "location": "stepDefinition.CRMActivity4.navigated_to_view_products_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49003300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "All Products should be listed \"laptop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "laptop",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.CRMActivity4.all_products_should_be_listed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 941491500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Close the Browser",
+            "match": {
+              "location": "stepDefinition.CloseBrowser.close_Browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@Activity4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the CRM Site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8024986100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to Alchemy CRM site and login",
+            "match": {
+              "location": "stepDefinition.CRMActivity1.Login_to_site()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T11:11:14.311Z",
+        "line": 43,
+        "name": "Creating a Product",
+        "description": "",
+        "id": "crm-site;creating-a-product;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3177400400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Navigate to All Products CreateProduct",
+            "match": {
+              "location": "stepDefinition.CRMActivity4.navigate_to_all_products_create_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85817800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Enter Details of the Product \"phone\", \"10000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 30
+                },
+                {
+                  "val": "10000",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.CRMActivity4.enter_details_of_the_product(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1179818100,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Click Save",
+            "match": {
+              "location": "stepDefinition.CRMActivity4.click_save()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1616127000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Navigated to View Products Page",
+            "match": {
+              "location": "stepDefinition.CRMActivity4.navigated_to_view_products_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31272900,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "All Products should be listed \"phone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.CRMActivity4.all_products_should_be_listed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 981134700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Close the Browser",
+            "match": {
+              "location": "stepDefinition.CloseBrowser.close_Browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@Activity4"
+          }
+        ]
+      }
+    ],
+    "name": "CRM Site",
+    "description": "",
+    "id": "crm-site",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/CRM.feature",
+    "tags": [
+      {
+        "name": "@CRM",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
