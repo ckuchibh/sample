@@ -1,0 +1,84 @@
+Status: PASS
+Time Taken: 15696
+Size: 1822
+Timestamp: Wed Jan 06 15:28:41 IST 2021
+TestStep: SoapBinding login-login Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: https://login.salesforce.com/services/Soap/c/50.0
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.2 (Java/15)
+Host : login.salesforce.com
+Accept-Encoding : gzip,deflate
+Content-Length : 388
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header></soapenv:Header>
+   <soapenv:Body>
+      <urn:login>
+         <urn:username>nithvish@nit.com</urn:username>
+         <urn:password>Qweasd@1klZKYf4rC88tLpSVr5XCRWahu</urn:password>
+      </urn:login>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : no-cache,must-revalidate,max-age=0,no-store,private
+X-B3-SpanId : b0da1e9ae633acd4
+X-B3-Sampled : 0
+X-B3-TraceId : b0da1e9ae633acd4
+Set-Cookie : BrowserId=yGh3nFAFEeub79P8BNzy_w; domain=.salesforce.com; path=/; expires=Thu, 06-Jan-2022 09:58:53 GMT; Max-Age=31536000
+Vary : Accept-Encoding
+#status# : HTTP/1.1 200 OK
+Date : Wed, 06 Jan 2021 09:58:53 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <loginResponse>
+         <result>
+            <metadataServerUrl>https://ibm307-dev-ed.my.salesforce.com/services/Soap/m/50.0/00D5g000002ueNp</metadataServerUrl>
+            <passwordExpired>false</passwordExpired>
+            <sandbox>false</sandbox>
+            <serverUrl>https://ibm307-dev-ed.my.salesforce.com/services/Soap/c/50.0/00D5g000002ueNp</serverUrl>
+            <sessionId>00D5g000002ueNp!ASAAQApQZXWAKDr5imx5VObhdC2koYOTqBLXmz3Uspq8RyRIFyAgVYfiHbFm9rsEe7joMUR6FDsL4feOBupW5McjGUclu9ru</sessionId>
+            <userId>0055g000002SmZPAA0</userId>
+            <userInfo>
+               <accessibilityMode>false</accessibilityMode>
+               <chatterExternal>false</chatterExternal>
+               <currencySymbol>$</currencySymbol>
+               <orgAttachmentFileSizeLimit>5242880</orgAttachmentFileSizeLimit>
+               <orgDefaultCurrencyIsoCode>USD</orgDefaultCurrencyIsoCode>
+               <orgDefaultCurrencyLocale>en_US</orgDefaultCurrencyLocale>
+               <orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments>
+               <orgHasPersonAccounts>false</orgHasPersonAccounts>
+               <organizationId>00D5g000002ueNpEAI</organizationId>
+               <organizationMultiCurrency>false</organizationMultiCurrency>
+               <organizationName>ibm</organizationName>
+               <profileId>00e5g000001VqkBAAS</profileId>
+               <roleId xsi:nil="true"/>
+               <sessionSecondsValid>7200</sessionSecondsValid>
+               <userDefaultCurrencyIsoCode xsi:nil="true"/>
+               <userEmail>nithyavishnu21@gmail.com</userEmail>
+               <userFullName>Nithya vishnu</userFullName>
+               <userId>0055g000002SmZPAA0</userId>
+               <userLanguage>en_US</userLanguage>
+               <userLocale>en_US</userLocale>
+               <userName>nithvish@nit.com</userName>
+               <userTimeZone>America/Los_Angeles</userTimeZone>
+               <userType>Standard</userType>
+               <userUiSkin>Theme3</userUiSkin>
+            </userInfo>
+         </result>
+      </loginResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

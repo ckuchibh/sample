@@ -1,0 +1,16 @@
+Status: PASS
+Time Taken: 264
+Size: 0
+Timestamp: Wed Jan 06 15:28:57 IST 2021
+TestStep: PropertyTransfer 1
+
+----------------- Messages ------------------------------
+Performed transfer [sessionId]
+----------------------------------------------------
+sessionId transferred [[00D5g000002ueNp!ASAAQApQZXWAKDr5imx5VObhdC2koYOTqBLXmz3Uspq8RyRIFyAgVYfiHbFm9rsEe7joMUR6FDsL4feOBupW5McjGUclu9ru]] from [SoapBinding login-login Request.Response] to [SoapBinding logout-logout Request.Request]
+------------ source path -------------
+declare namespace ns1='urn:enterprise.soap.sforce.com';
+//ns1:loginResponse[1]/ns1:result[1]/ns1:sessionId[1]
+------------ target path -------------
+declare namespace urn='urn:enterprise.soap.sforce.com';
+//urn:SessionHeader[1]/urn:sessionId[1]

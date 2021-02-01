@@ -1,0 +1,60 @@
+Status: PASS
+Time Taken: 298
+Size: 375
+Timestamp: Wed Jan 06 15:29:00 IST 2021
+TestStep: SoapBinding logout-logout Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: https://ibm307-dev-ed.my.salesforce.com/services/Soap/c/50.0
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.2 (Java/15)
+Host : ibm307-dev-ed.my.salesforce.com
+Accept-Encoding : gzip,deflate
+Content-Length : 443
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>00D5g000002ueNp!ASAAQApQZXWAKDr5imx5VObhdC2koYOTqBLXmz3Uspq8RyRIFyAgVYfiHbFm9rsEe7joMUR6FDsL4feOBupW5McjGUclu9ru</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:logout/>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Transfer-Encoding : chunked
+Cache-Control : no-cache,must-revalidate,max-age=0,no-store,private
+X-B3-SpanId : 4ba082de8dcc7e38
+X-B3-Sampled : 0
+X-B3-TraceId : 4ba082de8dcc7e38
+Set-Cookie : BrowserId=zFwf11AFEeueCgNTC84Vpw; domain=.salesforce.com; path=/; expires=Thu, 06-Jan-2022 09:58:59 GMT; Max-Age=31536000
+Vary : Accept-Encoding
+#status# : HTTP/1.1 200 OK
+Date : Wed, 06 Jan 2021 09:58:59 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <LimitInfoHeader>
+         <limitInfo>
+            <current>48</current>
+            <limit>15000</limit>
+            <type>API REQUESTS</type>
+         </limitInfo>
+      </LimitInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <logoutResponse/>
+   </soapenv:Body>
+</soapenv:Envelope>

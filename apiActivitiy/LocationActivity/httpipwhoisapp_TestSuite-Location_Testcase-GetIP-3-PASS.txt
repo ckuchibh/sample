@@ -1,0 +1,43 @@
+Status: PASS
+Time Taken: 228
+Size: 753
+Timestamp: Thu Dec 31 11:36:35 IST 2020
+TestStep: GetIP
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://ipwhois.app
+Method: GET
+StatusCode: 200
+URL: http://ipwhois.app/json/252.24.211.18
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [ipwhois.app]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET http://ipwhois.app/json/252.24.211.18 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Length: 0
+Host: ipwhois.app
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+X-Robots-Tag: [noindex]
+Server: [nginx/1.14.0]
+Access-Control-Allow-Origin: [*]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 200 OK]
+Date: [Thu, 31 Dec 2020 06:06:35 GMT]
+Access-Control-Allow-Headers: [*]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [PHP/7.4.6]
+
+{"ip":"252.24.211.18","success":true,"type":"IPv4","continent":"Asia","continent_code":"AS","country":"Malaysia","country_code":"MY","country_flag":"https:\/\/cdn.ipwhois.io\/flags\/my.svg","country_capital":"Kuala Lumpur","country_phone":"+60","country_neighbours":"BN,TH,ID","region":"Putrajaya","city":"Putrajaya","latitude":"2.926361","longitude":"101.696445","asn":"AS55720","org":"Gigabit Hosting Sdn Bhd","isp":"Gigabit Hosting Sdn Bhd","timezone":"Asia\/Kuala_Lumpur","timezone_name":"Malaysia Time","timezone_dstOffset":"0","timezone_gmtOffset":"28800","timezone_gmt":"GMT +8:00","currency":"Malaysian Ringgit","currency_code":"MYR","currency_symbol":"RM","currency_rates":"4.037","currency_plural":"Malaysian ringgits","completed_requests":43}

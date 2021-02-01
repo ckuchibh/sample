@@ -1,0 +1,45 @@
+Status: PASS
+Time Taken: 516
+Size: 78
+Timestamp: Wed Jan 06 15:49:43 IST 2021
+TestStep: Login
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://petstore.swagger.io
+Encoding: UTF-8
+Method: GET
+StatusCode: 200
+URL: https://petstore.swagger.io/v2/user/login?username=nithvish&password=password
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [petstore.swagger.io]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET https://petstore.swagger.io/v2/user/login?username=nithvish&password=password HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Length: 0
+Host: petstore.swagger.io
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+X-Rate-Limit: [5000]
+Server: [Jetty(9.2.9.v20150224)]
+Access-Control-Allow-Origin: [*]
+Access-Control-Allow-Methods: [GET, POST, DELETE, PUT]
+Connection: [keep-alive]
+X-Expires-After: [Wed Jan 06 11:19:42 UTC 2021]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 06 Jan 2021 10:19:42 GMT]
+Access-Control-Allow-Headers: [Content-Type, api_key, Authorization]
+Content-Type: [application/json]
+
+{"code":200,"type":"unknown","message":"logged in user session:1609928382955"}
