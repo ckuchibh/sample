@@ -14,14 +14,12 @@ public class LMS_TNG_Activity2 {
 
 	@BeforeClass
 	public void beforeClass() {
-
 		driver = new FirefoxDriver();
 		driver.get("https://alchemy.hguy.co/lms/");
 	}
 
 	@Test
 	public void TestAct2() {
-
 		WebElement header = driver.findElement(By.className("uagb-ifb-title-wrap"));
 
 		String h = header.getText();

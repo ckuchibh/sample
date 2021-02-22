@@ -14,7 +14,6 @@ public class LMS_TNG_Activity4 {
 
 	@BeforeClass
 	public void beforeClass() {
-
 		driver = new FirefoxDriver();
 		driver.get("https://alchemy.hguy.co/lms/");
 	}

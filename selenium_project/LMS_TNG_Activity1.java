@@ -12,14 +12,12 @@ public class LMS_TNG_Activity1 {
 
 	@BeforeClass
 	public void beforeClass() {
-
 		driver = new FirefoxDriver();
 		driver.get("https://alchemy.hguy.co/lms/");
 	}
 
 	@Test
 	public void TestAct1() {
-
 		String t = driver.getTitle();
 		System.out.println("Title of the page: "+t);
 		Assert.assertEquals("Alchemy LMS – An LMS Application", t);
